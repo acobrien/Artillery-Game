@@ -1,2 +1,2 @@
-# Artillery-Game
+# Artillery Game
 
