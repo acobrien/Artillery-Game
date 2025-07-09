@@ -74,8 +74,8 @@ void print_scene(const vector<string>& base1, const vector<string>& base2) {
 
 
 int main() {
-    Shell shell;
-    shell.fire();
+    Shell shell(10, 45);
+    cout << shell.fire() << endl;
     print_scene(home_base, enemy_base);
     return 0;
 }

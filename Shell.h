@@ -7,12 +7,12 @@
 
 class Shell {
 public:
-    Shell();
-    void fire();
+    Shell(double velocity, double firing_angle);
+    double fire();
+
 private:
-    double mass;
     double velocity;
-    double altitude;
+    double firing_angle;
 };
 
 #endif //SHELL_H
