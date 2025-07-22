@@ -25,6 +25,12 @@ vector<string> enemy_base = {
     R"(|   \ \=  /|\   * |)",
     R"(|    \ \  / \  ***|)"
 };
+vector<string> destroyed_base = {
+    R"(  / %  ^           )",
+    R"(  / \ #   KABOOM!  )",
+    R"(| % /\ \=         /)",
+    R"(| /  #\    >-->-* \)"
+};
 
 
 
@@ -77,5 +83,6 @@ int main() {
     Shell shell(10, 45);
     cout << shell.fire() << endl;
     print_scene(home_base, enemy_base);
+    print_scene(home_base, destroyed_base);
     return 0;
 }
