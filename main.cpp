@@ -80,7 +80,7 @@ void print_scene(const vector<string>& base1, const vector<string>& base2) {
 
 
 int main() {
-    Shell shell(10, 45);
+    Shell shell(12, 0.5, 10, 45);
     cout << shell.fire() << endl;
     print_scene(home_base, enemy_base);
     print_scene(home_base, destroyed_base);

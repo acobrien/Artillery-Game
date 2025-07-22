@@ -7,11 +7,13 @@
 
 class Shell {
 public:
-    Shell(double velocity, double firing_angle);
+    Shell(double mass, double ballistic_coefficient, double firing_velocity, double firing_angle);
     double fire();
 
 private:
-    double velocity;
+    double mass;
+    double ballistic_coefficient;
+    double firing_velocity;
     double firing_angle;
 };
 
